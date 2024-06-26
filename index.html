@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desvendando os Mistérios da Rede</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Desvendando os Mistérios da Rede</h1>
+        <nav>
+            <ul>
+                <li><a href="#secao1">IPv6</a></li>
+                <li><a href="#secao2">Ethernet</a></li>
+                <li><a href="#secao3">TCP/UDP</a></li>
+                <li><a href="#secao4">Gamificação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="secao1">
+            <h2>IPv6 - O Futuro da Internet está Aqui!</h2>
+            <div class="conteudo">
+                <p>O IPv6 é o protocolo de internet que sucede o IPv4. Ele foi criado para atender à crescente demanda por endereços IP, pois o IPv4 está ficando sem endereços disponíveis.</p>
+                <p>O IPv6 oferece várias vantagens em relação ao IPv4, como:</p>
+                <ul>
+                    <li>Um espaço de endereçamento muito maior</li>
+                    <li>Maior segurança</li>
+                    <li>Melhor suporte para mobilidade</li>
+                    <li>Simplificação do cabeçalho do pacote</li>
+                </ul>
+                <p>Para aprender mais sobre o IPv6, acesse os seguintes recursos:</p>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/IPv6" target="_blank">Wikipedia - IPv6</a></li>
+                    <li><a href="https://www.iana.org/assignments/ipv6-address-space" target="_blank">IANA - O que é IPv6?</a></li>
+				    <li><a href="https://almeida-cma.github.io/TRAB_GLOSSARIO/" target="_blank">FERRAMENTA DE APOIO - Glossário</a></li>
+                </ul>
+            </div>
+            <div class="desafio">
+                <h3>Desafio</h3>
+                <p>Converta o seguinte endereço IPv4 para IPv6: 192.168.1.100</p>
+                <input type="text" id="respostaDesafio1">
+                <button onclick="verificarResposta1()">Verificar Resposta</button>
+            </div>
+        </section>
+
+        <section id="secao2">
+            <h2>Ethernet - A Rede Local em Alta Velocidade</h2>
+            <div class="conteudo">
+                <p>A Ethernet é uma tecnologia de rede local (LAN) que permite conectar computadores e outros dispositivos entre si. Ela é amplamente utilizada em residências, empresas e escolas.</p>
+                <p>A Ethernet oferece várias vantagens, como:</p>
+                <ul>
+                    <li>Alta velocidade</li>
+                    <li>Baixo custo</li>
+                    <li>Confiabilidade</li>
+                    <li>Facilidade de instalação</li>
+                </ul>
+                <p>Para aprender mais sobre a Ethernet, acesse os seguintes recursos:</p>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Ethernet" target="_blank">Wikipedia - Ethernet</a></li>
+                    <li><a href="https://ieeexplore.ieee.org/document/9844436" target="_blank">IEEE - O que é tecnologia Ethernet?</a></li>
+					<li><a href="https://almeida-cma.github.io/TRAB_SELETORES/" target="_blank">FERRAMENTA DE APOIO - Seletores Ethernet</a></li>
+                </ul>
+            </div>
+            <div class="desafio">
+                <h3>Desafio</h3>
+                <p>Qual é o tipo de cabo Ethernet mais comum usado em residências?</p>
+                <select id="respostaDesafio2">
+                    <option value="incorreto">Selecione uma opção</option>
+                    <option value="cabo-coaxial">Cabo Coaxial</option>
+                    <option value="cabo-par-trançado">Cabo Par Trançado</option>
+                    <option value="fibra-optica">Fibra Óptica</option>
+                </select>
+                <button onclick="verificarResposta2()">Verificar Resposta</button>
+            </div>
+        </section>
+
+        <section id="secao3">
+            <h2>TCP/UDP - A Dupla Dinâmica da Comunicação</h2>
+            <div class="conteudo">
+                <p>O TCP e o UDP são protocolos de transporte que permitem que os aplicativos se comuniquem na rede.</p>
+                <p>O TCP oferece entrega confiável de dados, o que significa que os dados são garantidos para chegar ao destino na ordem correta. O UDP não oferece entrega confiável de dados, mas é mais rápido e eficiente.</p>
+                <p>A escolha entre TCP e UDP depende do aplicativo específico. Alguns aplicativos, como e-mail e transferência de arquivos, exigem entrega confiável de dados, portanto, TCP é a melhor opção. Outros aplicativos, como VoIP e streaming de vídeo, não exigem entrega confiável de dados e podem se beneficiar da maior velocidade e eficiência do UDP.</p>
+                <p>Para aprender mais sobre TCP e UDP, acesse os seguintes recursos:</p>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank">Wikipedia - TCP</a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" target="_blank">Wikipedia - UDP</a></li>
+					<li><a href="https://www.youtube.com/watch?v=jAOWsFCSrlY" target="_blank">Sistema de Chat Simples(TCP/IP) - Python 3.6 - Socket - Thread - Tkinter</a></li>
+                </ul>
+            </div>
+            <div class="desafio">
+                <h3>Desafio</h3>
+                <p>Qual protocolo é mais adequado para um aplicativo de chat online?</p>
+                <select id="respostaDesafio3">
+                    <option value="incorreto">Selecione uma opção</option>
+                    <option value="tcp">TCP</option>
+                    <option value="udp">UDP</option>
+                </select>
+                <button onclick="verificarResposta3()">Verificar Resposta</button>
+            </div>
+        </section>
+
+        <section id="secao4">
+            <h2>Gamificação - Desafios e Recompensas</h2>
+            <div class="jogo"></div>
+            <div class="quadro-recompensas">
+                <h2>Suas Recompensas</h2>
+                <ul id="recompensas">
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Desvendando os Mistérios da Rede</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
